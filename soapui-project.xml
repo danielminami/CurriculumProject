@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project
+	id="fb7f6158-cde7-499f-9ba4-4b80642587ef" activeEnvironment="Default"
+	name="REST Project 1" soapui-version="5.4.0"
+	xmlns:con="http://eviware.com/soapui/config">
+	<con:settings />
+	<con:interface xsi:type="con:RestService"
+		id="4463c941-fecc-4b0e-a904-ebb7190c4344"
+		wadlVersion="http://wadl.dev.java.net/2009/02"
+		name="http://localhost:8080" type="rest"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+		<con:settings />
+		<con:definitionCache />
+		<con:endpoints>
+			<con:endpoint>http://localhost:8080</con:endpoint>
+		</con:endpoints>
+		<con:resource name="Personaldata"
+			path="/personaldata/list" id="745faada-1ebb-413f-b3c5-28248dd13b07">
+			<con:settings />
+			<con:parameters />
+			<con:method name="Personaldata 1"
+				id="a5335237-ffe0-4be5-8c9d-45de0f7b4dc1" method="GET">
+				<con:settings />
+				<con:parameters />
+				<con:representation type="RESPONSE">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>200</con:status>
+					<con:params />
+					<con:element>Response</con:element>
+				</con:representation>
+				<con:representation type="FAULT">
+					<con:mediaType>application/json;charset=UTF-8</con:mediaType>
+					<con:status>405 400 415</con:status>
+					<con:params />
+					<con:element
+						xmlns:all="http://localhost/personaldata/all">all:Fault</con:element>
+				</con:representation>
+				<con:representation type="REQUEST">
+					<con:mediaType>application/json</con:mediaType>
+					<con:params />
+				</con:representation>
+				<con:representation type="REQUEST">
+					<con:mediaType>application/x-www-form-urlencoded</con:mediaType>
+					<con:params />
+				</con:representation>
+				<con:request name="Request 1"
+					id="ce37d400-0c91-4213-bc72-0964ff719f3a"
+					mediaType="application/json" postQueryString="false">
+					<con:settings>
+						<con:setting
+							id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+					</con:settings>
+					<con:endpoint>http://localhost:8080</con:endpoint>
+					<con:request>{ "name": "daniel", "email": "daniel" }
+					</con:request>
+					<con:originalUri>http://localhost/personaldata/all</con:originalUri>
+					<con:credentials>
+						<con:authType>No Authorization</con:authType>
+					</con:credentials>
+					<con:jmsConfig JMSDeliveryMode="PERSISTENT" />
+					<con:jmsPropertyConfig />
+					<con:parameters />
+					<con:parameterOrder />
+				</con:request>
+			</con:method>
+		</con:resource>
+	</con:interface>
+	<con:properties />
+	<con:wssContainer />
+	<con:oAuth2ProfileContainer />
+	<con:oAuth1ProfileContainer />
+	<con:sensitiveInformation />
+</con:soapui-project>

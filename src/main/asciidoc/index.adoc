@@ -1,0 +1,51 @@
+= Curriculum API Guide
+  Daniel Minami;
+
+
+== Introduction
+This is API Docs generated documentation.
+
+== Curriculum API
+Collection of CRUD API endpoints used to manipulate Curriculum Data registered in the application.
+
+=== List Personal Data
+List of Users
+include::{snippets}/personaldata/list/auto-section.adoc[]
+
+=== Create New Personal Data
+Create a new user
+include::{snippets}/personaldata/create/auto-section.adoc[]
+
+
+=== List Education
+List of Degrees taken 
+include::{snippets}/education/list/auto-section.adoc[]
+
+
+=== List Language
+List of Languages 
+include::{snippets}/language/list/auto-section.adoc[]
+
+
+=== List Professional Experience
+List of Professional Experiences
+include::{snippets}/professionalexperience/list/auto-section.adoc[]
+
+
+=== List Certification
+List of Certifications
+include::{snippets}/certification/list/auto-section.adoc[]
+
+
+=== List Project
+List of Projects
+include::{snippets}/project/list/auto-section.adoc[]
+
+=== Create new Project
+Create new Project
+include::{snippets}/project/create/auto-section.adoc[]
+
+
+=== List Skill
+List of Skills
+include::{snippets}/skill/list/auto-section.adoc[]
