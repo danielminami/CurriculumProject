@@ -9,7 +9,7 @@ This Application has been developed for learning purposes.
 I've decided to implement this WebApi with Java Spring Boot. I've managed to explore:  
   - Sprint Boot MVC
   - JPA (Code First)
-  - Postgre Database
+  - PostgreSQL Database
   - Filtering Log
   - Restful Docs
   - TDD (Test Driven Development)
